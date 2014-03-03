@@ -7,7 +7,7 @@ side_effects: side_effects.c test_file
 no_side_effects: no_side_effects.c test_file
 	gcc -std=c89 -Wall -pedantic -o ./no_side_effects no_side_effects.c
 
-test_file:
+test_file: test_file
 	echo "The quick brown fox jumps over the lazy dog" > test_file
 
 clean:
